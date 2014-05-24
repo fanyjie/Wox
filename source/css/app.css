@@ -1,0 +1,207 @@
+#quickNavigator-omnibox .omniboxReset
+{
+  padding:0;
+  margin:0;
+  font-weight:normal;
+  font-family : "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  box-sizing:content-box;
+  list-style-type:none;
+  text-shadow:initial;
+}
+
+.ng-hide
+{
+    display:none !important;
+}
+
+#quickNavigator-omnibox
+{
+    font-family: sans-serif;
+    background: rgb(241, 241, 241);
+    text-align: left;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 2px 10px;
+    border: 1px solid rgb(170, 170, 170);
+    z-index: 99999999;
+}
+
+#quickNavigator-omnibox .omnibox-SearchArea
+{
+    display: block;
+    padding: 10px;
+    z-index: 9999;
+    height:34px; 
+}
+
+#quickNavigator-omnibox .omnibox-tag{
+    line-height:34px;
+    font-size: 16px;
+    background-color: rgb(187, 206, 233);
+    padding-left: 5px;
+    padding-right: 5px;
+    float:left;
+}
+#quickNavigator-omnibox .omnibox-searchEngine
+{
+    float:right;
+    color:#ccc;
+    height: 34px;
+    line-height: 34px;
+    margin-right: 10px;
+    font-size: 14px;
+    font-family : "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+#quickNavigator-omnibox .omnibox-input
+{
+    /*make a Blocking Formatting Contexts (BFC)*/
+    overflow:hidden;
+}
+
+#quickNavigator-omnibox .omnibox-textbox{
+    width:100%;
+    border-radius: 3px;
+    background-color: white;
+    border: 1px solid rgb(232, 232, 232);
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+}
+
+#quickNavigator-omnibox .omnibox-SearchArea input
+{
+    border:none;
+    margin:0;
+    font-size: 20px;
+    height: 34px;
+    margin-bottom: 0px;
+    padding: 4px;
+    width: 100%;
+    outline: none;
+    box-sizing: border-box;
+}
+
+#quickNavigator-omnibox ul.omnibox-ul
+{
+    border-radius: 0px 0px 4px 4px;
+    list-style-type: none;
+}
+
+#quickNavigator-omnibox li.omnibox-li
+{
+    background-color: white;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    line-height: 1.1em;
+    padding: 7px 10px;
+    font-size: 16px;
+    color: black;
+    position: relative;
+}
+
+#quickNavigator-omnibox li p
+{
+    display:inline;
+}
+#quickNavigator-omnibox .omnibox-suggestions-top
+{
+    display: block;
+    overflow: hidden;
+    padding-bottom:2px;
+}
+
+#quickNavigator-omnibox .omnibox-suggestions-bottom
+{
+    font-size: 15px;
+    margin-top: 3px;
+    padding: 2px 0px;
+}
+
+#quickNavigator-omnibox .omnibox-suggestions-sourcetype
+{
+    color:#999;
+    float:right;
+    font-size: 13px;
+    padding-top: 5px;
+    padding-right: 15px;
+}
+#quickNavigator-omnibox .omnibox-suggestions-icon
+{
+    float:left;
+    margin-right:10px;
+}
+#quickNavigator-omnibox .omnibox-suggestions-icon img
+{
+    width:16px;
+    height:16px;
+    border:0 solid gray;
+}
+
+#quickNavigator-omnibox .omnibox-suggestions-title
+{
+    overflow:hidden;
+    font-size:16px;
+    cursor: pointer;
+    margin-left:5px;
+    float:left;
+    width: 80%;
+    white-space: nowrap;
+    color:black;
+    height:17px;
+    line-height:17px;
+    font-family : "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    text-decoration:none;
+}
+#quickNavigator-omnibox .omnibox-suggestions-title:hover
+{
+    text-decoration:underline;
+    background-color:initial;
+}
+
+#quickNavigator-omnibox .omnibox-suggestions-url
+{
+    white-space: nowrap;
+    width:80%;
+    font-size:15px;
+    height:22px;
+    line-height:22px;
+    color: rgb(34, 70, 132);
+    overflow:hidden;
+    padding-top:5px;
+    font-family : "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+#quickNavigator-omnibox .omnibox-Result-li-selected
+{
+    background-color: rgb(187, 206, 233) !important;
+    font-weight: normal;
+}
+#quickNavigator-omnibox .omnibox-suggestions-highlight
+{
+    font-weight:bold;
+    color:black;
+}
+#quickNavigator-omnibox .slideHide
+{
+    position:relative;
+    top:-70px;
+    z-index:-100;
+}
+
+.hidden
+{
+    display:none !important;
+}
+
+
+.quickNavigator-omnibox-show
+{
+	-webkit-animation:fadeInDown 150ms;
+    display:block;
+}
+
+/* 定义要调用的动画 */
+@-webkit-keyframes fadeInDown
+{
+    0%{opacity:0;-webkit-transform:translateY(-20px);}
+    100%{opacity:1;-webkit-transform:translateY(0);}
+}

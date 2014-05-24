@@ -1,4 +1,10 @@
 {
-  "name": "nw-demo",
-  "main": "index.html"
+  "name": "Wox",
+  "version": "0.0.1",
+  "main": "index.html",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-node-webkit-builder": "^0.1.21",
+    "grunt-contrib-watch": "^0.6.1"
+  }
 }

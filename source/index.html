@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wox</title>
+    <link rel='stylesheet' href="css/bootstrap.min.css" type="text/css" />
+    <link rel='stylesheet' href="css/app.css" type="text/css" />
+    <script type="text/javascript" src="scripts/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="scripts/angular.js" ></script>
+    <script type="text/javascript" src="scripts/bootstrap.js" ></script>
+    <script type="text/javascript" src="scripts/app.js" ></script>
+  </head>
+  <body>
+    <div id="quickNavigator-omnibox" ng-csp ng-controller="omnibox" ng-class="showOmnibox" ng-init="init()">
+        <div class="omniboxReset omnibox-SearchArea">
+            <div class="omniboxReset omnibox-textbox">
+                <div class="omniboxReset omnibox-tag" ng-show="tag!=''" data-mode="{{mode}}">{{tag}}</div>
+                <div class="omniboxReset omnibox-searchEngine" ng-show="suggestions.length == 0">使用百度搜索</div>
+                <div class="omniboxReset omnibox-input">
+                    <input class="omniboxReset" type="text" ng-keydown="onKeyDown($event)" ng-model="input" ng-Focusme="focus"/>
+                </div>
+            </div>
+        </div>
+        <ul class="omniboxReset omnibox-ul">
+            <li class="omniboxReset omnibox-li" ng-repeat="item in suggestions" ng-class="{'omnibox-Result-li-selected':item.selected == true}">
+                <ng-compile-template item="item" input="input" />
+            </li>
+        </ul>
+    </div>
+  </body>
+</html>
